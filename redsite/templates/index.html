@@ -1,0 +1,17 @@
+<h1>Hello world!</h1>
+<!-- Input form with fields "start date" and "charge hours"-->
+<form action="result/" method="post">
+    {% csrf_token %}
+    <label for="start_date">Start date</label>
+    <input type="date" id="start_date" name="start_date">
+    <br>
+    <input type="date" id="end_date" name="end_date">
+    <br>
+    <label for="charge_hours">Charge hours</label>
+    <input type="number" id="charge_hours" name="charge_hours" value=10>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<h2>{{d1}}</h2>
+<h2>{{d2}}</h2>
